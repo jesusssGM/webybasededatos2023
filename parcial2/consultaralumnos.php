@@ -21,7 +21,8 @@
             <div class="col-12">
                 <?php if($datos->num_rows > 0){?> 
                 <table class="table table-hover">
-
+                <thead>
+                    <tr>
                 <th>ID</th>
                 <th>Nombre</th>
                 <th>Numero de control</th>
@@ -29,11 +30,31 @@
                 <th>edad</th>
                 <th>turno</th>
                 <th>sexo</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    while($registro = $datos->fetch_assoc()){ ?>
 
+                    <tr>
+                        <td> <?php echo $registro["id"]; ?></td>
+                        <td> <?php echo $registro["nombre"]; ?></td>
+                        <td> <?php echo $registro["numero_control"]; ?></td>
+                        <td> <?php echo $registro["edad"]; ?></td>
+                        <td> <?php echo $registro["turno"]; ?></td>
+                        <td> <?php echo $registro["sexo"]; ?></td>
+                        <td> <?php echo $registro["semestre"]; ?></td>
+                        <td>
+                            <a href="" class="btn btn-sm btn-primary">editar</a>
+                            <a href="" class="btn btn-sm btn-danger">eliminar</a>
+                        </td>
+                    </tr>
 
+                   <?php } ?>
+                </tbody>
                 </table><?php } else  {?> 
                 <h2>no exiate datos de alumnos en la base de datos</h2>
-                <?php} ?> 
+                <?php } ?> 
             </div>
         </div>
     </div>
@@ -42,5 +63,6 @@
 <span>cetis 107 web app &copy; 2023</span>
 </footer>
     
+<script src="js/bootstrap.js"></script>
 </body>
 </html>

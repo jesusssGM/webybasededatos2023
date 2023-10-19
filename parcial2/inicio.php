@@ -22,6 +22,6 @@
     <footer class="text-center"><hr>
 <span>cetis 107 web app &copy; 2023</span>
 </footer>
-<script src="js/bootstrap.js"></script>   
+<script src="js/bootstrap.min.js"></script>   
 </body>
 </html>
