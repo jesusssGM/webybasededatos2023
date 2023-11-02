@@ -56,6 +56,6 @@
 <span>cetis 107 web app &copy; 2023</span>
 </footer>
 
-    <script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

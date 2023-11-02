@@ -18,9 +18,9 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="inicio.php">inicio</a></li>
-            <li><a class="dropdown-item" href="#">registra alumnos</a></li>
+            <li><a class="dropdown-item" href="registrararAlumnos.php">registra alumnos</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="consulta alumnos">consulta alumnos</a></li>
+            <li><a class="dropdown-item" href="consultaralumnos.php">consulta alumnos</a></li>
           </ul>
         </li>
       </ul>

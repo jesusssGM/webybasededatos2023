@@ -13,7 +13,7 @@
     include 'conexion.php';
     //recuperamoos los datos dee la base de datos
     $sql ="SELECT * FROM alumnos";
-    $datos = $conexion->query(sql);
+    $datos = $conexion->query($sql);
     ?>
 
     <div class="container">
@@ -39,11 +39,11 @@
                     <tr>
                         <td> <?php echo $registro["id"]; ?></td>
                         <td> <?php echo $registro["nombre"]; ?></td>
-                        <td> <?php echo $registro["numero_control"]; ?></td>
+                        <td> <?php echo $registro["no_control"]; ?></td>
+                        <td> <?php echo $registro["semestre"]; ?></td>
                         <td> <?php echo $registro["edad"]; ?></td>
                         <td> <?php echo $registro["turno"]; ?></td>
                         <td> <?php echo $registro["sexo"]; ?></td>
-                        <td> <?php echo $registro["semestre"]; ?></td>
                         <td>
                             <a href="" class="btn btn-sm btn-primary">editar</a>
                             <a href="" class="btn btn-sm btn-danger">eliminar</a>
@@ -63,6 +63,6 @@
 <span>cetis 107 web app &copy; 2023</span>
 </footer>
     
-<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

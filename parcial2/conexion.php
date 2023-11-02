@@ -1,12 +1,12 @@
 <?php
 
- $server = "localhost:3306";
+ $server = "localhost";
  $user = "root";
- $password ="root";
+ $password ="";
  $basededatos = "cetis";
 
 
- $conexion = new mysql($server,$user,$password,$basededatos);
+ $conexion = new mysqli($server,$user,$password,$basededatos);
  
  if($conexion->connect_error){
     die("fallo la conexion" . $conexion->connect_error);
