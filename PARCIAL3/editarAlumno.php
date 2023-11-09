@@ -27,14 +27,14 @@
             <div class="col-12 card m-4 p-4">
                 <h2>Registrar Alumno</h2><hr>
                 <form action="ActualizarAlumno.php" method="POST">
-                    <input type="hidden" name="id" value="<?php echo $alumno["id"]; ?>">
+                    <input type="hidden" name="id" value="<?php echo $alumno["ID"]; ?>">
                     <div class="form-group">
                         <label for="">Nombre:</label>
                         <input value="<?php echo $alumno["nombre"]; ?>" name="nombre" type="text" class="form-control" placeholder="Teclea el nombre del alumno" required>
                     </div>
                     <div class="form-group">
                         <label for="">Número de control:</label>
-                        <input value="<?php echo $alumno["numero_control"]; ?>" name="nc" type="text" class="form-control" placeholder="Teclea el número de control" required>
+                        <input value="<?php echo $alumno["no_control"]; ?>" name="nc" type="text" class="form-control" placeholder="Teclea el número de control" required>
                     </div>
                     <div class="form-group">
                         <label for="">Semestre:</label>

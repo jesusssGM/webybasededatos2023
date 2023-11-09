@@ -20,7 +20,7 @@
                 </div><br>
                 <div class="form-group">
                     <label for="semestre">Semestre:</label>
-                    <input type="text" class="form-control" name="nombre" placeholder="Teclea el semestre...">
+                    <input type="text" class="form-control" name="semestre" placeholder="Teclea el semestre...">
                 </div><br>
                 <div class="form-group">
                     <label for="especialidad">Especialidad:</label>

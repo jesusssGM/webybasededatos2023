@@ -39,16 +39,16 @@
                         <tbody>
                             <?php while($registro = $datos->fetch_assoc()){ ?>
                                 <tr>
-                                    <td><?php echo $registro["id"]; ?></td>
+                                    <td><?php echo $registro["ID"]; ?></td>
                                     <td><?php echo $registro["nombre"]; ?></td>
-                                    <td><?php echo $registro["numero_control"]; ?></td>
+                                    <td><?php echo $registro["no_control"]; ?></td>
                                     <td><?php echo $registro["semestre"]; ?></td>
                                     <td><?php echo $registro["edad"]; ?></td>
                                     <td><?php echo $registro["turno"]; ?></td>
                                     <td><?php echo $registro["sexo"]; ?></td>
                                     <td>
-                                        <a href="editarAlumno.php?id=<?php echo $registro["id"]; ?>"  class="btn btn-sm btn-primary">Editar</a>
-                                        <a href="eliminarAlumno.php?id=<?php echo $registro["id"]; ?>" class="btn btn-sm btn-danger">Eliminar</a>
+                                        <a href="editarAlumno.php?id=<?php echo $registro["ID"]; ?>"  class="btn btn-sm btn-primary">Editar</a>
+                                        <a href="eliminarAlumno.php?id=<?php echo $registro["ID"]; ?>" class="btn btn-sm btn-danger">Eliminar</a>
                                     </td>
                                 </tr>
                             <?php } ?>
