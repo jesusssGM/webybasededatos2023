@@ -22,7 +22,7 @@
     <div class="row">
         <div class="col-12">
             <h1>asignar materia  a alumnos</h1>
-            <form action="">
+            <form action="guardarAsignacion.php" method="POST">
                 <label for="alumnos"></label>
                 <select name="alumno" class="form-control">
                     <?php
